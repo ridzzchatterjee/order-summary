@@ -1,0 +1,149 @@
+:root {
+  --bg-color: #e0e8ff;
+  --card-bg-color: #ffffff;
+  --plan-bg-color: #f8f9fe;
+
+  --font-color: #000000;
+  --secondary-font-color: #616161;
+  --theme-color: rgb(56, 42, 225);
+  --hover-color: rgba(56, 42, 225, 0.8);
+  --accent-color: rgba(56, 42, 225, 0.3);
+
+  --big-font-size: 24px;
+  --small-font-size: 14px;
+
+  --medium-font: "roboto-slab-bold", Arial, Helvetica, sans-serif;
+  --light-font: "roboto-slab-light", Arial, Helvetica, sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: url("../assets/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--secondary-font-color);
+  font-family: var(--light-font);
+  font-size: var(--small-font-size);
+
+  height: 100vh;
+}
+
+.order-summary-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: var(--card-bg-color);
+}
+
+.music-image {
+  flex: 1;
+  background: url("../assets/images/illustration-hero.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.order-summary-section {
+  flex: 2;
+}
+
+.order-summary-section {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.order-summary-heading {
+  text-align: center;
+  font-family: var(--medium-font);
+  font-size: var(--big-font-size);
+  font-weight: 700;
+  color: var(--font-color);
+}
+
+.order-summary-desc {
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+  padding: 0 15px;
+}
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: var(--plan-bg-color);
+}
+
+.music-icon {
+  flex: 1;
+}
+
+.annual-plan-details {
+  flex: 2;
+  line-height: 1.5;
+}
+
+.plan-type {
+  font-family: var(--medium-font);
+  font-weight: 700;
+}
+
+.annual-plan-change {
+  flex: 1;
+  text-align: right;
+}
+
+.annual-plan-change a {
+  color: var(--theme-color);
+}
+
+.annual-plan-change a:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-family: var(--medium-font);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.proceed-payment {
+  background: var(--theme-color);
+  color: var(--card-bg-color);
+  box-shadow: 0px 5px 10px 0px var(--accent-color);
+}
+
+.proceed-payment:hover {
+  background: var(--hover-color);
+}
+
+.cancel-order {
+  background: transparent;
+  color: var(--font-color);
+  opacity: 0.5;
+}
+
+.cancel-order:hover {
+  opacity: 1;
+}

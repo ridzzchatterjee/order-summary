@@ -1,0 +1,14 @@
+body
+- background img
+- content should be v/h center-aligned
+
+container - div
+- 1:2 layout
+
+- image container  div > svg/img tag
+- summary container div 
+    - h1
+    - p
+    -div
+    - button
+    - btn
